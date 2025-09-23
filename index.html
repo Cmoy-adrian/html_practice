@@ -11,57 +11,58 @@
     <!--<link rel="stylesheet" href="./css/style.css" />-->
   </head> 
   <body> 
-    <header id = "main_page_header">
-      <h1>My Music Page</h1>
-      <p>This is a page I created,
-    to document all the music & artists I like!
-      </p>
-    </header>
+    <div class="container mt-4">
+      <header class="text-center mb-4">
+        <h1>My Music Page</h1>
+        <p>This is a page I created,
+        to document all the music & artists I like!
+        </p>
+      </header>
 
-    <main id = "page1_content">
-      <article id = "Tyler">
-        <h2>Favorite Artist: Tyler, The Creator</h2>
-        <img
-          src = "./img/TTC-Portrait.jpg"
-          alt = "An image of Tyler, The Creator taken from the 'Stop Playing With Me' music video."
-          width = "50%"
-        >
-        <br>
-        <div id = "song_album_wrapper" class = "flex-container">
-          <section id = "songs">
-            <p class = "subheader">Favorite Songs:</p>
-            <ul>
-              <li>"ARE WE STILL FRIENDS?",</li>
-              <li>"See You Again (feat. Kali Uchis)",</li>
-              <li>"Like Him (feat. Lola Young)",</li>
-              <li>"Darling, I (feat. Teezo Touchdown)"</li>
-              <li>"Sugar On My Tounge",</li>
-              <li>"Don't You Worry Baby (feat. Madison McFerrin)",</li>
-              <li>"I'll Take Care Of You (feat. Yebba)"</li>
-            </ul> 
-          </section>
-          <section id = "albums">
-            <p class = "subheader">Best Albums (IMO):</p>
-            <ol>
-              <li>Chromakopia</li>
-              <li>IGOR</li>
-              <li>Don't Tap The Glass</li>
-            </ol>
+      <main id = "page1_content">
+        <article id = "Tyler">
+          <h2>Favorite Artist: Tyler, The Creator</h2>
+          <img
+            src = "./img/TTC-Portrait.jpg"
+            alt = "An image of Tyler, The Creator taken from the 'Stop Playing With Me' music video."
+            width = "50%"
+          >
+          <br>
+          <div id = "song_album_wrapper" class = "row">
+            <section id = "songs" class="col-md-6 mb-4">
+              <p class = "subheader">Favorite Songs:</p>
+              <ul>
+                <li>"ARE WE STILL FRIENDS?",</li>
+                <li>"See You Again (feat. Kali Uchis)",</li>
+                <li>"Like Him (feat. Lola Young)",</li>
+                <li>"Darling, I (feat. Teezo Touchdown)"</li>
+                <li>"Sugar On My Tounge",</li>
+                <li>"Don't You Worry Baby (feat. Madison McFerrin)",</li>
+                <li>"I'll Take Care Of You (feat. Yebba)"</li>
+              </ul> 
             </section>
-          </div>
-        <p class = "button">Learn more about 
-          <a href = "https://en.wikipedia.org/wiki/Tyler,_the_Creator">
-            Tyler, The Creator</a>
-          here!</p>
-      </article>
-      
-      <nav id = "footer">
-        <h2>Some of My Other Favorite Artists...</h2>
-        <ul>
-          <li><a href = ./laufey.html>Laufey</a></li>
-          <li><a href = ./odetari.html>Odetari</a></li>
-        </ul>
-      </nav>
-    </main>
+            <section id = "albums" class="col-md-6 mb-4">
+              <p class = "subheader">Best Albums (IMO):</p>
+              <ol>
+                <li>Chromakopia</li>
+                <li>IGOR</li>
+                <li>Don't Tap The Glass</li>
+              </ol>
+              </section>
+            </div>
+          <p class = "text-center">Learn more about 
+            <a href = "https://en.wikipedia.org/wiki/Tyler,_the_Creator" class="btn btn-primary">
+              Tyler, The Creator</a>
+            here!</p>
+        </article>
+        <footer class="mt-5">
+          <nav class="d-flex justify-content-center gap-4">
+            <h2>Some of My Other Favorite Artists...</h2>
+              <a href = ./laufey.html class = "btn btn-success">Laufey</a>
+              <a href = ./odetari.html class = "btn btn-success">Odetari</a>
+          </nav>
+        </footer>
+      </main>
+    </div>
   </body> 
 </html>
